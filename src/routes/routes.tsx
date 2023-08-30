@@ -1,21 +1,29 @@
 import { NavigationContainer } from "@react-navigation/native";
 
 import {
-  View,
-  Text,
-  StyleSheet,
-  SafeAreaView,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+  useFonts,
+  Montserrat_100Thin,
+  Montserrat_700Bold,
+} from "@expo-google-fonts/montserrat";
+
+import { Text, StyleSheet, SafeAreaView } from "react-native";
 
 import { Button } from "@components/global/button/buton.screen";
 
 export default function App() {
+  // let [fontsLoaded, fontError] = useFonts({
+  //   Montserrat_100Thin,
+  //   Montserrat_700Bold,
+  // });
+
+  // if (!fontsLoaded && !fontError) {
+  //   return null;
+  // }
+
   return (
     <NavigationContainer>
-      <SafeAreaView style={styles.container}>
-        <Text> app</Text>
+      <SafeAreaView style={{ flex: 1, backgroundColor: "black" }}>
+        <Button />
       </SafeAreaView>
     </NavigationContainer>
   );

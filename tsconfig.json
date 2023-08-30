@@ -3,23 +3,13 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react-native",
-    "lib": ["dom", "esnext"],
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "moduleResolution": "node",
+    "lib": ["ES2021"],
     "module": "commonjs",
-    "noEmit": true,
     "target": "ES2021",
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "strict": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@screens/*": ["src/screens/*"],
-    }
+      "@components/*": ["./src/components/*"],
+    },
   },
   "exclude": ["node_modules"]
 }

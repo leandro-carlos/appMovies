@@ -11,6 +11,7 @@ export function Button() {
   return (
     <TouchableOpacity>
       <Text>botao</Text>
+      <Text>botao</Text>
     </TouchableOpacity>
   );
 }
